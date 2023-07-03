@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const getData = createAsyncThunk("counter/getData", async (_) => {
   const res = axios.get(
-    "https://api.openweathermap.org/data/2.5/weather?q=cairo&appid=67e042512a5a6b7d860856140a0ab4c1"
+    `https://api.openweathermap.org/data/2.5/weather?q=cairo&appid=${process.env.WEATHER_KEY}`
   );
   return res;
 });
