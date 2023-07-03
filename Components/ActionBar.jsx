@@ -8,7 +8,7 @@ const ActionBar = () => {
 
   const dispatch = useDispatch();
 
-  const { weather } = useSelector((state) => state.counter);
+  const { weather } = useSelector((state) => state.weather);
 
   // useEffect(() => {
   //   dispatch(getData());

@@ -3,7 +3,7 @@ import CounterSlice from "./CounterSlice";
 
 const store = configureStore({
   reducer: {
-    counter: CounterSlice,
+    weather: CounterSlice,
   },
 });
 
