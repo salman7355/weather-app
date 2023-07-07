@@ -1,7 +1,6 @@
 "use client";
 import Spinner from "@/Components/Spinner";
 import Weather from "@/Components/Weather";
-import { WeatherAPI } from "@/apiKey";
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
@@ -12,7 +11,7 @@ export default function Home() {
   const [weather, setWeather] = useState("");
   const [Loading, setLoading] = useState(false);
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${City}&appid=${WeatherAPI}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${City}&appid=67e042512a5a6b7d860856140a0ab4c1&units=metric`;
 
   const fetchData = (e) => {
     e.preventDefault();
