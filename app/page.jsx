@@ -1,6 +1,6 @@
 "use client";
-import Spinner from "@/Components/Spinner";
-import Weather from "@/Components/Weather";
+import Spinner from "@/app/Components/Spinner";
+import Weather from "@/app/Components/Weather";
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
